@@ -18,9 +18,9 @@ const Person = props => {
                         <p className="card-title"><span className="fw-bold">Profession:</span> {profession}</p>
                         <p className="card-title"><span className="fw-bold">Age:</span> {age}</p>
                         <p className="card-title"><span className="fw-bold">Email:</span> {email}</p>
-                        <p className="card-title"><span className="fw-bold">Donation:</span> {donation}</p>
+                        <p className="card-title"><span className="fw-bold">Donation:</span> ${donation}</p>
                         <div className="text-center btn-container">
-                            <button type="button" className="btn w-50 btn-select btn-primary">{element}  Select</button>
+                            <button onClick={() => props.buttonControll(props.person)} type="button" className="btn w-50 btn-select btn-primary">{element}  Select</button>
                         </div>
                     </div>
                 </div>
